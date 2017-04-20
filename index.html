@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>NASAPI</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+</head>
+
+<body>
+    <!-- JUMBOTRON -->
+    <div id="header" class="jumbotron">
+        <div class="container">
+            <h1 class="txtjumbo" id="txtTitle">NASAPI</h1>
+            <p class="txtjumbo">Welcome to our NASA API web app!</p>
+            <p>
+                <a id="button" href="#" class="btn btn-primary btn-lg">MER Rovers</a><button id="apodButton" class="btn btn-lg btn-primary">Astronomy picture Of The Day</button>
+            </p>
+            <p class="quote">“It’s a fixer-upper of a planet but we could make it work.” - Elon Musk, CEO of SpaceX</p>
+            <p id="mp3_player">
+                <audio src="assets/music/interstellar.mp3" preload="auto" />
+            </p>
+        </div>
+    </div>
+    <!-- END JUMBOTRON -->
+    <!-- MAIN -->
+    <div class="main" id="main-layout">
+        <div class="row">
+            <div id="roverRow" class="col-lg-3 col-md-3">
+                <h1 class="main-text">Choose a rover</h1>
+                <h4 class="main-text-sol">Sol</h4>
+                <div id="sol-date" class="main-text-sol-day">0</div>
+                <input id="sol-selector" type="range" value=1 max=1600 min=1 />
+                <p><img src="assets/images/curiosity.jpg" alt="Curiosity Rover" class="curiosityImage">
+                    <button id="curiosity" class="btn btn-lg btn-primary btn-center">Curiosity Rover</button>
+                </p>
+                <p><img src="assets/images/Spirit.jpg" alt="Spirit Rover" class="spiritImage">
+                    <button id="spirit" class="btn btn-lg btn-primary btn-center">Spirit Rover</button>
+                </p>
+                <p><img src="assets/images/Opportunity.jpg" alt="Opportunity Rover" class="opportunityImage">
+                    <button id="opportunity" class="btn btn-lg btn-primary btn-center">Opportunity Rover</button>
+                </p>
+            </div>
+            <div id="getRoverImages" class="col-lg-9 col-md-9">
+                <h1 class="main-text">NASA API Documentation</h1>
+                	<ul id="roverImages">
+                		
+                	</ul>
+            </div>
+
+
+            <div class="apod" id="apod-layout">
+        <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
+        <video autoplay loop id="video-background" muted>
+            <source src="assets/videos/Space-2381.mp4" type="video/mp4">
+        </video>
+        <div class="row">
+                <div class="col-md-12" style="margin-bottom:10px;">
+                    <img id="apod_img_id" width="400px" />
+                    <p class="text-center" style="color: white" id="copyright"></p>
+                    <h3 style="color: white" id="apod_title"></h3>
+                    <p style="color: white" id="apod_explanation"></p>
+                    <h3 class="text-center text-primary">Enter A Date to get NASA's Picture of the Day</h3>
+                    <span id="error" class="text-center"></span>
+                </div>
+                <div class="row text-center form-group form-inline" id="dateDiv">
+                    <input type="text" name="month" id="month" class="form-control" placeholder="MM">
+                    <input type="text" name="day" id="day" class="form-control" placeholder="DD">
+                    <input type="text" name="year" id="year" class="form-control" placeholder="YYYY">
+                    <button id="submitDate" class="btn btn-primary">Click to Search</button>
+                </div>
+            </div>
+
+ 
+            <div class="footer">
+                <div class="container">
+                    <div class="row text-center">
+                        <p style="color:white">Copyright &copy; NASA API App</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+            <script src="assets/music/audiojs/audio.min.js"></script>
+            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+            <!-- Latest compiled and minified JavaScript -->
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+            <script type="text/javascript" src="assets/javascript/app.js"></script>
+            <script type="text/javascript" src="assets/javascript/apod.js"></script>
+</body>
+
+</html>
