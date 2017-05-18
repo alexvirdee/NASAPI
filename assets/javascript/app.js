@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	// Function that will display images from the rovers
 	function roverData(name, sol) {
-		var sol = 1600; //$("#sol");
+		var sol = $("#sol-selector").val();
 		$.ajax({
 			url: 'https://api.nasa.gov/mars-photos/api/v1/rovers/' + name.toLowerCase() +'/photos?sol='+ sol +'&api_key=u8vY57tt0UKbMXetRwOIfrBM7CMDI2eSTurQAJ72',
 			method: "GET",
