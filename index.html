@@ -49,50 +49,46 @@
             <div id="getRoverImages" class="col-lg-9 col-md-9">
                 <h1 class="main-text">NASA API Documentation</h1>
                 	<ul id="roverImages">
-                		
+
                 	</ul>
             </div>
-
-
             <div class="apod" id="apod-layout">
-        <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
-        <video autoplay loop id="video-background" muted>
-            <source src="assets/videos/Space-2381.mp4" type="video/mp4">
-        </video>
-        <div class="row">
-                <div class="col-md-12" style="margin-bottom:10px;">
-                    <img id="apod_img_id" width="400px" />
-                    <p class="text-center" style="color: white" id="copyright"></p>
-                    <h3 style="color: white" id="apod_title"></h3>
-                    <p style="color: white" id="apod_explanation"></p>
-                    <h3 class="text-center text-primary">Enter A Date to get NASA's Picture of the Day</h3>
-                    <span id="error" class="text-center"></span>
+                <!--  Video is muted & autoplays, placed after major DOM elements for performance & has an image fallback  -->
+                <video autoplay loop id="video-background" muted>
+                    <source src="assets/videos/Space-2381.mp4" type="video/mp4">
+                </video>
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom:10px;">
+                        <img id="apod_img_id" width="400px" />
+                        <p class="text-center" style="color: white" id="copyright"></p>
+                        <h3 style="color: white" id="apod_title"></h3>
+                        <p style="color: white" id="apod_explanation"></p>
+                        <h3 class="text-center text-primary">Enter A Date to get NASA's Picture of the Day</h3>
+                        <span id="error" class="text-center"></span>
+                    </div>
+                    <div class="row text-center form-group form-inline" id="dateDiv">
+                        <input type="text" name="month" id="month" class="form-control" placeholder="MM">
+                        <input type="text" name="day" id="day" class="form-control" placeholder="DD">
+                        <input type="text" name="year" id="year" class="form-control" placeholder="YYYY">
+                        <button id="submitDate" class="btn btn-primary">Click to Search</button>
+                    </div>
                 </div>
-                <div class="row text-center form-group form-inline" id="dateDiv">
-                    <input type="text" name="month" id="month" class="form-control" placeholder="MM">
-                    <input type="text" name="day" id="day" class="form-control" placeholder="DD">
-                    <input type="text" name="year" id="year" class="form-control" placeholder="YYYY">
-                    <button id="submitDate" class="btn btn-primary">Click to Search</button>
-                </div>
-            </div>
-
- 
-            <div class="footer">
-                <div class="container">
-                    <div class="row text-center">
-                        <p style="color:white">Copyright &copy; NASA API App</p>
+                <div class="footer">
+                    <div class="container">
+                        <div class="row text-center">
+                            <p style="color:white">Copyright &copy; NASA API App</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
+        <script src="assets/music/audiojs/audio.min.js"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <script type="text/javascript" src="assets/javascript/app.js"></script>
+        <script type="text/javascript" src="assets/javascript/apod.js"></script>
+    <!-- !!!!!!! this main-layout div was not closed !!!!!!! -->
     </div>
-
-            <script src="assets/music/audiojs/audio.min.js"></script>
-            <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.0.min.js"></script>
-            <!-- Latest compiled and minified JavaScript -->
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-            <script type="text/javascript" src="assets/javascript/app.js"></script>
-            <script type="text/javascript" src="assets/javascript/apod.js"></script>
 </body>
-
 </html>

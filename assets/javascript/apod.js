@@ -1,7 +1,5 @@
 $(document).ready(function() {
-    $("#submitDate").click(function() {
-        return getApod();
-    });
+    $("#submitDate").click(getApod); // !!!!! you just want to execute this function whem the button is clicked !!!
 });
 
 function getApod() {
@@ -21,7 +19,7 @@ function getApod() {
                 } else {
                     $("#copyright").text("Image Credits: " + "Public Domain");
                 }
- 
+
                 $("#apod_img_id").attr("src", result.url);
                 $("#apod_explanation").text(result.explanation);
                 $("#apod_title").text(result.title);

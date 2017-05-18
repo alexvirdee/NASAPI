@@ -2,7 +2,7 @@
 	background-image: url("../images/mars.jpg");
   height: 100vh;
   width: 100vw;
-  margin: 0 !important;
+  margin: 0 !important; /* !!!!! these importants shouldn't be necessary due to the cascade !!!!! */
   padding: 0 !important;
   background-repeat: no-repeat;
 }
@@ -75,7 +75,6 @@ body {
 
 
 #mp3_player {
-
   position: relative;
   left: 300px;
   top: 150px;
@@ -92,7 +91,7 @@ ul {
 li {
   width: 33%;
   margin-bottom: 10px;
-  
+
 }
 
 li:nth-child(3n) {
@@ -104,14 +103,12 @@ li:nth-child(3n) {
 }
 
 .curiosityImage {
- 
+
   margin: 10px;
 }
 
 .spiritImage {
-
   margin: 10px;
-
 }
 
 .opportunityImage {
@@ -142,19 +139,18 @@ li:nth-child(3n) {
   background-color: #1F0101;
 }
 
-
-
-/* Sol selector  http://www.cssportal.com/style-input-range/
-*/
+/* Sol selector  http://www.cssportal.com/style-input-range/ */
 
 input[type=range] {
   -webkit-appearance: none;
   margin: 10px 0;
   width: 100%;
 }
+
 input[type=range]:focus {
   outline: none;
 }
+
 input[type=range]::-webkit-slider-runnable-track {
   width: 100%;
   height: 12px;
@@ -165,6 +161,7 @@ input[type=range]::-webkit-slider-runnable-track {
   border-radius: 1px;
   border: 1px solid #18D501;
 }
+
 input[type=range]::-webkit-slider-thumb {
   box-shadow: 3px 3px 3px #00AA00;
   border: 2px solid #83E584;
@@ -176,9 +173,11 @@ input[type=range]::-webkit-slider-thumb {
   -webkit-appearance: none;
   margin-top: -7px;
 }
+
 input[type=range]:focus::-webkit-slider-runnable-track {
   background: #205928;
 }
+
 input[type=range]::-moz-range-track {
   width: 100%;
   height: 12px;
@@ -189,6 +188,7 @@ input[type=range]::-moz-range-track {
   border-radius: 1px;
   border: 1px solid #18D501;
 }
+
 input[type=range]::-moz-range-thumb {
   box-shadow: 3px 3px 3px #00AA00;
   border: 2px solid #83E584;
@@ -198,6 +198,7 @@ input[type=range]::-moz-range-thumb {
   background: #439643;
   cursor: pointer;
 }
+
 input[type=range]::-ms-track {
   width: 100%;
   height: 12px;
@@ -207,18 +208,21 @@ input[type=range]::-ms-track {
   border-color: transparent;
   color: transparent;
 }
+
 input[type=range]::-ms-fill-lower {
   background: #205928;
   border: 1px solid #18D501;
   border-radius: 2px;
   box-shadow: 1px 1px 1px #002200;
 }
+
 input[type=range]::-ms-fill-upper {
   background: #205928;
   border: 1px solid #18D501;
   border-radius: 2px;
   box-shadow: 1px 1px 1px #002200;
 }
+
 input[type=range]::-ms-thumb {
   box-shadow: 3px 3px 3px #00AA00;
   border: 2px solid #83E584;
@@ -228,90 +232,99 @@ input[type=range]::-ms-thumb {
   background: #439643;
   cursor: pointer;
 }
+
 input[type=range]:focus::-ms-fill-lower {
   background: #205928;
 }
+
 input[type=range]:focus::-ms-fill-upper {
   background: #205928;
 }
 
 /* END MAIN */
 
-
 #video-background {
   position: fixed;
-  right: 0; 
+  right: 0;
   bottom: 0;
-  min-width: 100%; 
+  min-width: 100%;
   min-height: 100%;
-  width: auto; 
+  width: auto;
   height: auto;
   z-index: -100;
 }
 
-
-
-.footer{
+.footer {
   margin-top: 0px;
   bottom: 0;
-
 }
-#apod-layout{
+
+#apod-layout {
   background: none;
   height: 650px;
 }
-#dateDiv{
+
+#dateDiv {
   width: 60%;
   margin: 150px;
   text-align: center;
 }
-#submitDate{
+
+#submitDate {
   height: 40px;
   font-weight: bold;
   font-size: 20px;
   position: relative;
   left: 100px;
 }
-#showApod{
+
+#showApod {
   width: 60%;
   margin: auto;
   background-color: #4aa1f3;
   color: white;
   border-radius: 25px;
 }
-input[type='text']{
+
+input[type='text'] {
   height: 40px;
   font-size: 20px;
 }
-#errorDate{
+
+#errorDate {
   width: 50%;
   margin: auto;
   text-align: center;
 }
-#year{
+
+#year {
   width: 80px;
   font-size: 18px;
   position: relative;
   left: 100px;
 }
-#month{
+
+#month {
   width: 60px;
   font-size: 18px;
   position: relative;
   left: 100px;
 }
-#day{
+
+#day {
   width: 60px;
   font-size: 18px;
   position: relative;
   left: 100px;
 }
-#apod_img_id{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-  }
-#apod-layout{
+
+#apod_img_id {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#apod-layout {
   padding-left: 30px;
   padding-right: 30px;
   height: 650px;
