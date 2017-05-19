@@ -275,7 +275,7 @@ input[type=range]:focus::-ms-fill-upper {
   font-weight: bold;
   font-size: 20px;
   position: relative;
-  left: 100px;
+  left: 350px;
 }
 
 #showApod {
@@ -301,21 +301,21 @@ input[type='text'] {
   width: 80px;
   font-size: 18px;
   position: relative;
-  left: 100px;
+  left: 350px;
 }
 
 #month {
   width: 60px;
   font-size: 18px;
   position: relative;
-  left: 100px;
+  left: 350px;
 }
 
 #day {
   width: 60px;
   font-size: 18px;
   position: relative;
-  left: 100px;
+  left:350px;
 }
 
 #apod_img_id {
